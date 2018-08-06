@@ -83,3 +83,9 @@ aside .list .list-links li a {
 aside .list .list-links li a:hover {
   color: #39b0ee;
 }
+
+/* INFO-WINDOW */
+
+.source {
+  font-style: italic;
+}

@@ -27,17 +27,11 @@ class MarkerInfoWindow extends React.Component {
                       <p>{this.props.infoContent}</p>
                     </div>
                   </InfoWindow>}
-
               </Marker>
 
-
-
             </div>
-
         )
-
     }
-
 }
 
 export default MarkerInfoWindow
