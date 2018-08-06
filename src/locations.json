@@ -1,0 +1,161 @@
+[{
+    "title": "Sugarloaf_Mountain",
+    "name": "Sugarloaf Mountain",
+    "position": {
+      "lat": -22.949259,
+      "lng": -43.154576
+    }
+  },
+  {
+    "title": "Christ_the_Redeemer_(statue)",
+    "name": "Christ The Redemeer",
+    "position": {
+      "lat": -22.951871,
+      "lng": -43.21118
+    }
+  },
+  {
+    "title": "Maracanã_Stadium",
+    "name": "Maracanã Stadium",
+    "position": {
+      "lat": -22.912107,
+      "lng": -43.23016
+    }
+  },
+  {
+    "title": "Sambadrome",
+    "name": "Sambadrome",
+    "position": {
+      "lat": -22.911452,
+      "lng": -43.196804
+    }
+  },
+  {
+    "title": "Ipanema",
+    "name": "Ipanema",
+    "position": {
+      "lat": -22.987064,
+      "lng": -43.204797
+    }
+  },
+  {
+    "title": "Escadaria_Selaron",
+    "name": "Escadaria Selaron",
+    "position": {
+      "lat": -22.915311,
+      "lng": -43.179204
+    }
+  },
+  {
+    "title": "Catete_Palace",
+    "name": "Catete Palace",
+    "position": {
+      "lat": -22.925859,
+      "lng": -43.176154
+    }
+  },
+  {
+    "title": "Copacabana,_Rio_de_Janeiro",
+    "name": "Copacabana",
+    "position": {
+      "lat": -22.966944,
+      "lng": -43.180556
+    }
+  },
+  {
+    "title": "Pedra_do_Sal",
+    "name": "Pedra do Sal",
+    "position": {
+      "lat": -22.89801,
+      "lng": -43.18527
+    }
+  },
+  {
+    "title": "Lapa,_Rio_de_Janeiro",
+    "name": "Lapa",
+    "position": {
+      "lat": -22.914405,
+      "lng": -43.18259
+    }
+  },
+  {
+    "title": "Parque_Lage",
+    "name": "Parque Lage",
+    "position": {
+      "lat": -22.958949,
+      "lng": -43.211892
+    }
+  },
+  {
+    "title": "Arpoador",
+    "name": "Arpoador",
+    "position": {
+      "lat": -22.99017,
+      "lng": -43.191279
+    }
+  },
+  {
+    "title": "Candelária_Church",
+    "name": "Candelária Church",
+    "position": {
+      "lat": -22.900811,
+      "lng": -43.177894
+    }
+  },
+  {
+    "title": "Flamengo_park",
+    "name": "Flamengo Park",
+    "position": {
+      "lat": -22.934953,
+      "lng": -43.172416
+    }
+  },
+  {
+    "title": "Rio_de_Janeiro_Botanical_Garden",
+    "name": "Botanical Garden",
+    "position": {
+      "lat": -22.9675,
+      "lng": -43.223889
+    }
+  },
+  {
+    "title": "Santa_Teresa,_Rio_de_Janeiro",
+    "name": "Santa Teresa",
+    "position": {
+      "lat": -22.9175,
+      "lng": -43.188056
+    }
+  },
+  {
+    "title": "Vista_Chinesa",
+    "name": "Vista Chinesa",
+    "position": {
+      "lat": -22.973158,
+      "lng": -43.249756
+    }
+  },
+  {
+    "title": "Fort_Copacabana",
+    "name": "Fort Copacabana",
+    "position": {
+      "lat": -22.986763,
+      "lng": -43.187674
+    }
+  },
+  {
+    "title": "Rio_de_Janeiro_Cathedral",
+    "name": "Metropolitan Cathedral",
+    "position": {
+      "lat": -22.910308,
+      "lng": -43.180861
+    }
+  },
+  {
+    "title": "Theatro_Municipal_(Rio_de_Janeiro)",
+    "name": "Theatro Municipal",
+    "position": {
+      "lat": -22.909222,
+      "lng": -43.176492
+    }
+  }
+]
