@@ -32,3 +32,54 @@ section {
 .mapElement {
   height: 100%;
 }
+
+/* ASIDE */
+
+aside {
+  width: 20%;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-right: 3px solid #39b0ee;
+}
+
+aside h2 {
+  color: #999;
+  font-size: 1.3em;
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: -30px;
+}
+
+aside .filter-section {
+  width: 100%;
+  display: flex;
+  padding-top: 60px;
+}
+
+aside .filter-section input {
+  height: 30px;
+  width: 100%;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+aside .list .list-links {
+  padding: 0;
+}
+
+aside .list .list-links li a {
+  display: block;
+  text-decoration: none;
+  color: #999;
+  padding: 15px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+aside .list .list-links li a:hover {
+  color: #39b0ee;
+}
