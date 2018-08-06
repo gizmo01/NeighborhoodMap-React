@@ -17,7 +17,7 @@ class SideBar extends React.Component {
                 </div>
                 <div className='list'>
                   <ul className='list-links'>
-                    {this.props.showingVenueName.map(location =>
+                    {this.props.showingLocationName.map(location =>
                       <li
                         key={location.title}
                         tabIndex='0'

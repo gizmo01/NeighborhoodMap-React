@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Map from './Map'
 import SideBar from './SideBar'
+import Map from './Map'
 import escapeRegExp from 'escape-string-regexp'
 import sortBy from 'sort-by'
 import * as locations from './locations.json';
@@ -46,21 +46,21 @@ class App extends Component {
 
   render() {
 
-    let showingVenueName;
+    let showingLocationName;
     if(this.state.searchedLocations){
       const match = new RegExp(escapeRegExp(this.state.searchedLocations), 'i')
-      showingVenueName = this.state.locations.filter(locations => match.test(locations.name))
+      showingLocationName = this.state.locations.filter(locations => match.test(locations.name))
     } else {
-      showingVenueName = this.state.locations
+      showingLocationName = this.state.locations
     }
-    showingVenueName.sort(sortBy('name'))
+    showingLocationName.sort(sortBy('name'))
 
     return (
       <div className="App">
         <aside tabIndex='0'>
 
           <SideBar
-            showingVenueName={showingVenueName}
+            showingLocationName={showingLocationName}
             searchQuery={this.searchQuery}
             onToggleOpen={this.onToggleOpen}
           />
@@ -70,7 +70,7 @@ class App extends Component {
           <section tabIndex='0'>
 
             <Map
-              showingVenueName={showingVenueName}
+              showingLocationName={showingLocationName}
               infoContent={this.state.infoContent}
               locationToShow={this.state.locationToShow}
               onToggleOpen={this.onToggleOpen}
