@@ -69,6 +69,10 @@ class App extends Component {
               <Map
                 showingVenueName={showingVenueName}
                 infoContent={this.state.infoContent}
+                placeToShow={this.state.placeToShow}
+                onToggleOpen={this.onToggleOpen}
+                getInfo={this.getInfo}
+                isOpen={this.state.isOpen}
                 containerElement={<div className='containerElement'/>}
                 mapElement={<div className='mapElement' />}
                 loadingElement={<div className='loadingElement' />}
