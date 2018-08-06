@@ -32,6 +32,14 @@ class App extends Component {
     })
   }
 
+  onToggleOpen = (title, marker) => {
+    this.setState({
+      placeToShow: title,
+      isOpen: true
+    })
+    this.getInfo(marker);
+  }
+
   render() {
     let showingVenueName;
 
