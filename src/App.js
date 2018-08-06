@@ -15,6 +15,23 @@ class App extends Component {
     infoContent: ""
   }
 
+  /* Fetch from Wikipedia API */
+  getInfo = (marker) => {
+    let url = `https://en.wikipedia.org/w/api.php?&origin=*&action=opensearch&format=json&limit=1&search=${marker.title}`;
+    fetch(url)
+    .then(function(response) {
+      return response.json();
+    }).then( (data) => {
+      this.setState({
+          infoContent: data[2][0]//selecting a small descriptive paragraph from WikiAPI Response Array
+      });
+    })
+    .catch(err => {
+      alert("an error occurred while fetching")
+      this.setState({ error: true });
+    })
+  }
+
   render() {
     let showingVenueName;
 
