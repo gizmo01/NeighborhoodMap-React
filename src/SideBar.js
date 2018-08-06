@@ -5,17 +5,15 @@ class SideBar extends React.Component {
     render (){
 
         return (
-            <aside tabIndex='0'>
               <nav>
-                <h2>Rio de Janeiro</h2>
+                <h1>Rio de Janeiro</h1>
                 <div className='filter-section'>
                   <input
                     type='text'
-                    placeholder='Search point of interest'
+                    placeholder='Search location...'
                     aria-label = "Enter location"
                     onChange={(event) => this.props.searchQuery(event.target.value)}
                   />
-
                 </div>
                 <div className='list'>
                   <ul className='list-links'>
@@ -31,7 +29,6 @@ class SideBar extends React.Component {
                   </ul>
                 </div>
               </nav>
-            </aside>
 
         )
 

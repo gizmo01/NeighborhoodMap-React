@@ -21,7 +21,7 @@ class MarkerInfoWindow extends React.Component {
               >
                 {this.props.placeToShow === this.props.marker.title && this.props.isOpen &&
                   <InfoWindow onCloseClick={this.props.onToggleOpen}>
-                    <div className='info-window'>
+                    <div>
                       <p className='source'>Read more on: <a target="_blank" href={`https://en.wikipedia.org/wiki/${this.props.marker.title}`}>Wikipedia.org</a></p>
                       <h1>{this.props.marker.name}</h1>
                       <p>{this.props.infoContent}</p>

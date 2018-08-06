@@ -7,8 +7,8 @@ import * as locations from './locations.json';
 
 class App extends Component {
   state = {
-    venue: locations,
-    searchedVenues: '',
+    locations: locations,
+    searchedLocations: '',
     placeToShow: '',
     isOpen: false,
     error: false,
@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   searchQuery = (query) => {
-    this.setState({ searchedVenues: query })
+    this.setState({ searchedLocations: query })
   }
 
   onToggleOpen = (title, marker) => {
@@ -45,27 +45,27 @@ class App extends Component {
   }
 
   render() {
+
     let showingVenueName;
-
-    if(this.state.searchedVenues){
-        const match = new RegExp(escapeRegExp(this.state.searchedVenues), 'i')
-        showingVenueName = this.state.venue.filter(venue => match.test(venue.name))
+    if(this.state.searchedLocations){
+      const match = new RegExp(escapeRegExp(this.state.searchedLocations), 'i')
+      showingVenueName = this.state.locations.filter(locations => match.test(locations.name))
     } else {
-        showingVenueName = this.state.venue
+      showingVenueName = this.state.locations
     }
-
     showingVenueName.sort(sortBy('name'))
 
     return (
       <div className="App">
+        <aside tabIndex='0'>
 
-        <SideBar
-          showingVenueName={showingVenueName}
-          searchedVenues={this.state.searchedVenues}
-          searchQuery={this.searchQuery}
-          onToggleOpen={this.onToggleOpen}
-        />
+          <SideBar
+            showingVenueName={showingVenueName}
+            searchQuery={this.searchQuery}
+            onToggleOpen={this.onToggleOpen}
+          />
 
+        </aside>
         <main>
           <section tabIndex='0'>
 
@@ -84,8 +84,6 @@ class App extends Component {
 
           </section>
         </main>
-
-
       </div>
     );
   }
