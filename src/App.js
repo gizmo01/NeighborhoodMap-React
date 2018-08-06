@@ -79,7 +79,7 @@ class App extends Component {
               containerElement={<div className='containerElement'/>}
               mapElement={<div className='mapElement' />}
               loadingElement={<div className='loadingElement' />}
-              googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyB6KuC_x__0u1uAEBxlPIb1LL-r7U8nFwQ&v=3'//rimettere la mia piu tardi
+              googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyD_eMVtX7eWMYEnJ-Y2OrNRkk_JIfvh0xg&v=3'
             />
 
           </section>
