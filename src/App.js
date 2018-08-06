@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Map from './Map'
 import logo from './logo.svg';
 import './App.css';
+import * as locations from './locations.json';
 
 class App extends Component {
   state = {
