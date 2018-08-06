@@ -13,7 +13,7 @@ class SideBar extends React.Component {
                     type='text'
                     placeholder='Search point of interest'
                     aria-label = "Enter location"
-                    
+                    onChange={(event) => this.props.searchQuery(event.target.value)}
                   />
 
                 </div>

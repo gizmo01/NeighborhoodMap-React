@@ -32,6 +32,10 @@ class App extends Component {
     })
   }
 
+  searchQuery = (query) => {
+    this.setState({ searchedVenues: query })
+  }
+
   onToggleOpen = (title, marker) => {
     this.setState({
       placeToShow: title,
@@ -59,7 +63,8 @@ class App extends Component {
         <SideBar
           showingVenueName={showingVenueName}
           searchedVenues={this.state.searchedVenues}
-
+          searchQuery={this.searchQuery}
+          onToggleOpen={this.onToggleOpen}
         />
 
         <main className='main-page'>
