@@ -21,7 +21,7 @@ const Map = compose(
         getInfo={() => {props.getInfo(marker)}}
         infoContent={props.infoContent}
         onToggleOpen={() => {props.onToggleOpen(marker.title, marker)}}
-        placeToShow={props.placeToShow}
+        locationToShow={props.locationToShow}
         isOpen = {props.isOpen}
       />
     )}

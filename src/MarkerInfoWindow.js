@@ -14,12 +14,12 @@ class MarkerInfoWindow extends React.Component {
         return (
             <div>
               <Marker
-                icon={this.props.placeToShow === this.props.marker.title && this.props.isOpen ? { url: iconOpen } : { url: iconDefault }}
+                icon={this.props.locationToShow === this.props.marker.title && this.props.isOpen ? { url: iconOpen } : { url: iconDefault }}
                 key={this.props.marker.title}
                 position={{lat: this.props.marker.position.lat, lng: this.props.marker.position.lng}}
                 onClick={() => this.props.onToggleOpen(this.props.marker.title, this.props.marker)}
               >
-                {this.props.placeToShow === this.props.marker.title && this.props.isOpen &&
+                {this.props.locationToShow === this.props.marker.title && this.props.isOpen &&
                   <InfoWindow onCloseClick={this.props.onToggleOpen}>
                     <div>
                       <p className='source'>Read more on: <a target="_blank" href={`https://en.wikipedia.org/wiki/${this.props.marker.title}`}>Wikipedia.org</a></p>

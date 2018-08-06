@@ -9,7 +9,7 @@ class App extends Component {
   state = {
     locations: locations,
     searchedLocations: '',
-    placeToShow: '',
+    locationToShow: '',
     isOpen: false,
     error: false,
     infoContent: ""
@@ -38,7 +38,7 @@ class App extends Component {
 
   onToggleOpen = (title, marker) => {
     this.setState({
-      placeToShow: title,
+      locationToShow: title,
       isOpen: true
     })
     this.getInfo(marker);
@@ -72,7 +72,7 @@ class App extends Component {
             <Map
               showingVenueName={showingVenueName}
               infoContent={this.state.infoContent}
-              placeToShow={this.state.placeToShow}
+              locationToShow={this.state.locationToShow}
               onToggleOpen={this.onToggleOpen}
               getInfo={this.getInfo}
               isOpen={this.state.isOpen}
