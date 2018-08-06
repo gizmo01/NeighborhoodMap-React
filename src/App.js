@@ -42,6 +42,8 @@ class App extends Component {
             <section tabIndex='0'>
 
               <Map
+                showingVenueName={showingVenueName}
+                infoContent={this.state.infoContent}
                 containerElement={<div className='containerElement'/>}
                 mapElement={<div className='mapElement' />}
                 loadingElement={<div className='loadingElement' />}
