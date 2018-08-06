@@ -3,6 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  state = {
+    venue: locations,
+    searchedVenues: '',
+    placeToShow: '',
+    isOpen: false,
+    error: false,
+    infoContent: ""
+  }
+
   render() {
     return (
       <div className="App">
