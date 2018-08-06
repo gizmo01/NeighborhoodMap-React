@@ -19,6 +19,21 @@ class App extends Component {
       <div className="App">
         <h1 className="App-title">Welcome to React</h1>
 
+        <main className='main-page'>
+          <div className='right-section'>
+            <section tabIndex='0'>
+
+              <Map
+                containerElement={<div className='containerElement'/>}
+                mapElement={<div className='mapElement' />}
+                loadingElement={<div className='loadingElement' />}
+                googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyB6KuC_x__0u1uAEBxlPIb1LL-r7U8nFwQ&v=3'//rimettere la mia piu tardi
+              />
+
+            </section>
+          </div>
+        </main>
+
       </div>
     );
   }
