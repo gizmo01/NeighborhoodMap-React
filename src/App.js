@@ -59,7 +59,6 @@ class App extends Component {
     return (
       <div className="App">
 
-
         <SideBar
           showingVenueName={showingVenueName}
           searchedVenues={this.state.searchedVenues}
@@ -67,26 +66,25 @@ class App extends Component {
           onToggleOpen={this.onToggleOpen}
         />
 
-        <main className='main-page'>
-          <div className='right-section'>
-            <section tabIndex='0'>
+        <main>
+          <section tabIndex='0'>
 
-              <Map
-                showingVenueName={showingVenueName}
-                infoContent={this.state.infoContent}
-                placeToShow={this.state.placeToShow}
-                onToggleOpen={this.onToggleOpen}
-                getInfo={this.getInfo}
-                isOpen={this.state.isOpen}
-                containerElement={<div className='containerElement'/>}
-                mapElement={<div className='mapElement' />}
-                loadingElement={<div className='loadingElement' />}
-                googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyB6KuC_x__0u1uAEBxlPIb1LL-r7U8nFwQ&v=3'//rimettere la mia piu tardi
-              />
+            <Map
+              showingVenueName={showingVenueName}
+              infoContent={this.state.infoContent}
+              placeToShow={this.state.placeToShow}
+              onToggleOpen={this.onToggleOpen}
+              getInfo={this.getInfo}
+              isOpen={this.state.isOpen}
+              containerElement={<div className='containerElement'/>}
+              mapElement={<div className='mapElement' />}
+              loadingElement={<div className='loadingElement' />}
+              googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyB6KuC_x__0u1uAEBxlPIb1LL-r7U8nFwQ&v=3'//rimettere la mia piu tardi
+            />
 
-            </section>
-          </div>
+          </section>
         </main>
+
 
       </div>
     );

@@ -9,13 +9,7 @@ body {
 
 /* MAIN */
 
-.main-page {
-  display: flex;
-}
-
-/* RIGHT-SECTION */
-
-.right-section {
+main {
   width: 100%;
 }
 

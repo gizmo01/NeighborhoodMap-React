@@ -17,27 +17,20 @@ class SideBar extends React.Component {
                   />
 
                 </div>
-
                 <div className='list'>
-
                   <ul className='list-links'>
-
                     {this.props.showingVenueName.map(location =>
-
                       <li
-
                         key={location.title}
-
-                      tabIndex='0'><a onClick={() => this.props.onToggleOpen(location.title, location)} >{location.name}</a></li>
-
+                        tabIndex='0'
+                      >
+                        <a onClick={() => this.props.onToggleOpen(location.title, location)} >{location.name}
+                        </a>
+                      </li>
                     )}
-
                   </ul>
-
                 </div>
-
               </nav>
-
             </aside>
 
         )
