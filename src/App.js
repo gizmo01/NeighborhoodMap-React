@@ -27,7 +27,7 @@ class App extends Component {
       });
     })
     .catch(err => {
-      alert("an error occurred while fetching")
+      alert("An error occurred while fetching")
       this.setState({ error: true });
     })
   }
