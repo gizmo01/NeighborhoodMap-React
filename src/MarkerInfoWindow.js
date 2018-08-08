@@ -20,7 +20,7 @@ const iconOpen = 'http://maps.google.com/mapfiles/ms/icons/green.png';
                   <InfoWindow onCloseClick={props.onToggleOpen}>
                     <div className='info-window'>
                       <p className='source'>Read more on: <a target="_blank" href={`https://en.wikipedia.org/wiki/${props.marker.title}`}>Wikipedia.org</a></p>
-                      <h1>{props.marker.name}</h1>
+                      <h2>{props.marker.name}</h2>
                       <p>{props.infoContent}</p>
                     </div>
                   </InfoWindow>}
